@@ -74,6 +74,7 @@ function App() {
           </Route>
           <Route path='/NewEvent'>
             <NewEvent/>
+            {/* New Event */}
           </Route>
         </div>
         }
