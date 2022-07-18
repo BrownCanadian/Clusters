@@ -1,0 +1,16 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    color: white;
+}
+
+.header > *{
+    padding: 20px;
+}
+
+.inputfield{
+    z-index: 100;
+}

@@ -1,0 +1,28 @@
+html{
+    scroll-snap-type: y mandatory;
+}
+.moments{
+    display:grid;
+    place-items: center;
+    height: 100vh;
+    background-color: black;
+}
+.moments__top > h1{
+    text-align: center;
+    color: white;
+    margin-bottom: -150px;
+}
+.moments__content{
+    position: relative;
+    height: 75vh;
+    background-color: white;
+    width: 25%;
+    border-radius: 20px;
+    max-width: 450px;
+    max-height: 1200px;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+}
+.moments__content::-webkit-scrollbar{
+    display: none;
+}

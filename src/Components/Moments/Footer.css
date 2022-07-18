@@ -1,0 +1,37 @@
+.contentFooter{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    display: flex;
+    bottom: 8vh;
+    padding-left: 5px;
+}
+
+.contentFooter > h3{
+    margin-left: 10px;
+    padding-bottom: 30px;
+    font-size: small;
+}
+
+.Avatar{
+    margin-top: 15px;
+}
+
+.content__actions{
+    display: flex;
+    position: absolute;
+    width: 95%;
+    justify-content: space-between;
+    color: white;
+    bottom: 1vh;
+    align-items: center;
+}
+.fav{
+    padding: 0 10px;
+}
+
+.content__stat{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
