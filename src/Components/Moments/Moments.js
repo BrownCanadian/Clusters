@@ -11,7 +11,7 @@ const Moments = (props) => {
     const unSubscribe = onSnapshot(searchQuery,(querySnapshot)=>{
         const messageListInt = [];
         querySnapshot.forEach((snap)=>{
-            messageListInt.push(snap.data());
+            messageListInt.push({data:snap.data(),Id:snap.id});
             });
         setmoments(messageListInt);     
         });
@@ -33,7 +33,7 @@ useEffect(()=>{
           url="https://ak.picdn.net/shutterstock/videos/1088005579/preview/stock-footage-vertical-screen-stylish-diverse-multiethnic-couple-in-cozy-clothes-recording-a-dance-video-from-a.mp4"
           likes={950}
         /> */}
-        {(moments.length>0 && moments[0]!==null) && moments.map(el => <Content val={el}/>)}
+        {(moments.length>0 && moments[0]!==null) && moments.map(el => <Content val={el.data} ID={el.Id}/>)}
         {/* channel={el.channel} dp={el.dp} url={el.url} song="shit" likes={el.likes} */}
         {/* <Content />
         <Content /> */}

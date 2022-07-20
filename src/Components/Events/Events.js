@@ -11,7 +11,7 @@ const Events = () => {
     const unSubscribe = onSnapshot(searchQuery,(querySnapshot)=>{
         const messageListInt = [];
         querySnapshot.forEach((snap)=>{
-            messageListInt.push(snap.data());
+            messageListInt.push({data:snap.data(),Id:snap.id});
             });
         seteventsList(messageListInt);    
         });
@@ -23,7 +23,7 @@ useEffect(()=>{
         <div className="events_page">
             <h1>EVENTS</h1>
             <NavLink to='/NewEvent'>Add Event</NavLink>
-            {eventsList.length>0 && eventsList.map(event=><EventElement val={event}/>)}
+            {eventsList.length>0 && eventsList.map(event=><EventElement val={event.data} id={event.Id}/>)}
         </div>
     );
 };

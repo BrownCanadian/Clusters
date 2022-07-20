@@ -19,7 +19,7 @@ const Content = (props) => {
     <div className="content">
         <Header/>
         <video className='content__video' ref={vidref} onClick={playpausemanager} src={props.val.url} alt='moment video error :/' loop/>
-        <Footer channel={props.val.channel} dp={props.val.dp} likes={props.val.likes} song="Demo SOng"/>
+        <Footer channel={props.val.channel} dp={props.val.dp} likes={props.val.likes} id={props.ID} song="Demo SOng"/>
     </div> 
     );
 };

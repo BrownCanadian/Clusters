@@ -36,6 +36,7 @@ const NewEvent = () => {
                     eventDate:enteredDate,
                     eventTime:enteredTime,
                     posterURL:url,
+                    attendance:[],
                     name:"Saksham",
                     createdAt:serverTimestamp(),
                     sender:userId

@@ -35,3 +35,14 @@
     align-items: center;
     margin-right: 10px;
 }
+
+.likebutton{
+    background-color: inherit;
+}
+
+.fav{
+    color: white;
+}
+.liked{
+    color: rgb(225, 71, 71);
+}

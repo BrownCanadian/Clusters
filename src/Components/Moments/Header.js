@@ -22,7 +22,7 @@ const Header = () => {
                 addDoc(address,{
                 channel:"Saksham",
                 dp:"None",
-                likes:4500,
+                likes:[],
                 createdAt:serverTimestamp(),
                 // sender:userId,(SHould be added to identufy the uploader)
                 url:url
