@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Chat_Login{
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.334);
+    height:522px;
+    width:395px;
+    border-radius: 7%;
+    position: absolute;
+    top: 8.4rem;
+    left: 45rem;
+    justify-content: center;
+    box-shadow: 14px 14px 20px rgba(0, 0, 0, 0.347);
+}
+.LoginTitle{
+    font-family: "Montserrat","Helvetica Neue";
+    text-shadow: 14px 14px 20px rgba(0, 0, 0, 0.347);
+
+    color: whitesmoke;
+    font-weight: semi-bold;
+    font-size: 3rem;
+    position: relative;
+    top: 5rem;
+
+}
+.ListIcon{
+    list-style-type: none;
+    position: absolute;
+    top:5rem;
+}
+.EnetrInfo{
+    font-family: "Montserrat","Helvetica Neue";
+    color: #F35144;
+    font-weight: 600;
+    font-size: 1.5rem;
+    position: relative;
+  
+    top: 9rem;
+    right:44%;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.243);
+}
+.li{
+    position: absolute;
+    padding:2rem;
+}
+.InputBox{
+    font-family: "Montserrat","Helvetica Neue";
+    position: relative;
+    padding-top:0.6rem;
+    height:1.4rem;
+    width: 80%;
+    border:1px solid white;
+    top:10rem;
+    right:45%;
+
+    }
+.SubmitButton{
+    font-family: "Montserrat","Helvetica Neue";
+  background-color: #ffffff;
+  border-radius: 100px;
+  box-shadow: rgba(252, 70, 15, 0.2) 0 -25px 18px -14px inset,rgba(236, 35, 99, 0.15) 0 1px 2px,rgba(151, 16, 16, 0.15) 0 2px 4px,rgba(245, 42, 10, 0.15) 0 4px 8px,rgba(187, 44, 44, 0.15) 0 8px 16px,rgba(216, 62, 19, 0.15) 0 16px 32px;
+  color: #F35144;
+  cursor: pointer;
+  display: inline-block;
+  
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  position: relative;
+  top:11.9rem;
+  right:44%;
+}
+
+.SubmitButton:hover {
+  box-shadow: rgba(219, 246, 229, 0.35) 0 -25px 18px -14px inset,rgba(255, 255, 255, 0.25) 0 1px 2px,rgba(251, 80, 23, 0.25) 0 2px 4px,rgba(255, 34, 64, 0.25) 0 4px 8px,rgba(187, 44, 44, 0.25) 0 8px 16px,rgba(187, 44, 44, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+    /* position: absolute;
+    font-family: akira-super ,sans-serif;
+    font-weight: bolder;
+    top:1.9rem;
+    width: 15%;
+    height: 2rem;
+    border-radius:3rem;
+    background-color: white;
+    border:1px solid white; 
+    color:#F35144 ; */
+
+
+
+.circlearea{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+.circlearea li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height:25px; 
+    background:#F35144;
+    animation: animate 20s linear infinite;
+    
+
+
+}
+.circlearea li:nth-child(1){
+    left: 56%;
+    width:15rem;
+    height:15rem;
+    animation-delay: 0s;
+    border-radius: 100%;
+    /* filter: blur(0.1rem); */
+    bottom: 37rem;
+    background:#EE7E75;
+}
+.circlearea li:nth-child(3){
+    background:#FEB08D;
+    left: 30%;
+    width:10rem;
+    height:10rem;
+    animation-delay: 1.5s;
+    border-radius: 100%;
+    /* filter: blur(0.1rem); */
+    bottom: 28rem;
+}
+.circlearea li:nth-child(2){
+    background:#F79A83;
+    left: 30%;
+    width:22rem;
+    height:22rem;
+    animation-delay: 5s;
+    border-radius: 100%;
+    /* filter: blur(0.05rem); */
+    bottom: 9rem;
+}
+.circlearea li:nth-child(4){
+    background:#ff6c47;
+    left: 48%;
+    width:11rem;
+    height:11rem;
+    animation-delay: 2.5s;
+    border-radius: 100%;
+    /* filter: blur(0.05rem); */
+    bottom: 16rem;
+}
+.circlearea li:nth-child(5){
+    background:#cb4a2a;
+    left: 40%;
+    width:14rem;
+    height:14rem;
+    animation-delay: 1.3s;
+    border-radius: 100%;
+    /* filter: blur(0.05rem); */
+    bottom: 39rem;
+}
+
+@keyframes animate {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-3rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+}
+.Bganimate{
+    background: linear-gradient(to right,#E96D6D,#FFB38F);
+    width: 100%;
+    height: 100vh;
+    bottom:13rem;
+    filter: blur(0rem);
+
+}

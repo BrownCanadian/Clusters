@@ -20,6 +20,16 @@ useEffect(()=>{
     listentoDoc();
 },[]);
   return (
+    <div>
+      <div className="Bganimate">
+        <ul className="circlearea" >
+            <li> </li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+        </ul>
+    </div>
     <div className="moments">
       <div className="moments__top">
         <h1>MOMENTS</h1>
@@ -40,6 +50,7 @@ useEffect(()=>{
         {/* Video */}
         {/* Video */}
       </div>
+    </div>
     </div>
   );
 };

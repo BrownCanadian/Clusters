@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
-
+import './ChatAuth.css';
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'></link>
 const ChatRoomAuth = (props) => {
     const clusternumber = useRef('');
     const submitHandler = (event) => {
@@ -8,16 +9,33 @@ const ChatRoomAuth = (props) => {
         props.clusternumber(enteredcluster);
     }
     return (
+        
+    <div>
+         <div className="Bganimate">
+        <ul className="circlearea" >
+            <li> </li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+        </ul>
+        </div>
+   
     <div className="Chat_Login">
-        <h1>This is the Chat Room Auth</h1>
+        <h1 className="LoginTitle">CHAT ROOM AUTH</h1>
         <div className="login_box">
             <form onSubmit={submitHandler}>
-                <label>Enter Cluster Unit : </label>
-                <input type="text" ref={clusternumber} placeholder="46, 47, 48, etc"/>
-                <button type="submit">Enter Chat</button>
+                <list className="ListIcon">
+                <li ><label className="EnetrInfo">Enter Unit No. </label></li>
+                <li ><input type="text" className="InputBox" ref={clusternumber} placeholder="46, 47, 48, etc"/></li>
+                <li > <button type="submit" className="SubmitButton">join</button></li>
+                </list>
             </form>
         </div>
-    </div>);
+    </div>
+   
+    </div>
+    );
 };
 
 export default ChatRoomAuth;

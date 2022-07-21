@@ -5,8 +5,8 @@ import { db } from "../Firebase/firebase-auth";
 
 const EventElement = (props) => {
     const user = useSelector(state=>state.loginStat.username);
-    const [attending,setattending] = useState(props.val.attendance.find(el => el===user)!==undefined);
-    const updateAtt = () => {
+   
+    const updateAtt = () => { const [attending,setattending] = useState(props.val.attendance.find(el => el===user)!==undefined);
         const docRef = doc(db,'events',props.id);
         updateDoc(docRef,{
             attendance: arrayUnion(user)
